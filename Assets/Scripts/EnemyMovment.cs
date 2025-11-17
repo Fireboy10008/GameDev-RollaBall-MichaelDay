@@ -5,7 +5,7 @@ public class EnemyMovment : MonoBehaviour
 {
     public Transform player;
     private NavMeshAgent navMeshAgent;
-    public float moveSpeed = 8f; // Adjust this value as needed
+    public float moveSpeed = 3f; // Adjust this value as needed
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
