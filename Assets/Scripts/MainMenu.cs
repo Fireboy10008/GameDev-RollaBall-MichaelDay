@@ -1,16 +1,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class PlayButton : MonoBehaviour
+public class MainMenu : MonoBehaviour
 {
-    public void PlayGame()
-    {
-        SceneManager.LoadSceneAsync("Level 1");
-    }
 
-    public void QuitGame()
-    {
-        Debug.Log("Quit Game");
-        Application.Quit();
+    public void PlayGame()
+    { 
+        SceneManager.LoadSceneAsync("1")
     }
 }
