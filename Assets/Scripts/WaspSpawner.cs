@@ -1,16 +1,17 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class WaspSpawner : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public GameObject targetObject;
+    
+    void OnTriggerEnter(Collider other)
     {
-      
+        targetObject.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerExit(Collider other)
     {
-        
-    }
+        targetObject.SetActive(true);
+    }       
 }
